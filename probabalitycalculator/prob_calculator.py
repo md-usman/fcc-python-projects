@@ -38,12 +38,12 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
 
         randomBalls = hat.draw(num_balls_drawn)
 
-        m += probabalityMatch(randomBalls, expected_balls)
+        m += probabilityMatch(randomBalls, expected_balls)
 
     return m / num_experiments
 
 
-def probabalityMatch(actual, expected):
+def probabilityMatch(actual, expected):
     seen = {}
 
     for i in actual:
